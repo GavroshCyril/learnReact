@@ -1,42 +1,116 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;400;500;600;700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.title {
+  font-size: 28px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nickname-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #12438e;
+  max-width: fit-content;
+  padding: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.short-nickname {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(34, 108, 219, 0.735);
+  color: white;
+  padding: 12px;
 }
 
-.card {
-  padding: 2em;
+.full-nickname {
+  color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.alers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.alert {
+  position: relative;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.alert-icon {
+  margin-right: 10px;
+}
+
+.alert-message {
+  display: inline-block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  color: #0c5460;
+}
+
+.alert-reminder {
+  background-color: #cce5ff;
+  border: 1px solid #b8daff;
+  color: #004085;
+}
+
+.hamburger {
+  cursor: pointer;
+  margin: 20px;
+}
+
+.burger-menu {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  background-color: #004085;
+  padding: 8px;
+}
+
+.burger-menu__line {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transform-origin: 1px;
+  transition: all 0.3 linear;
 }
