@@ -1,0 +1,13 @@
+.large-card {
+  background-color: rgb(227, 227, 227);
+  color: black;
+  padding: 22px 16px;
+
+  &__date {
+    font-size: 12px;
+  }
+
+  &__title {
+    font-size: 22px;
+  }
+}
